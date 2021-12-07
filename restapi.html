@@ -8,14 +8,18 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   
 </head>
 <body>
 
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>KONGARI CHANDRASHEKAR</h1>
-  <p>Problem Solver,Quick Learner</p> 
-</div>
+    <br>
+    <div class="text-center" style="margin-bottom:0">
+      <h1>KONGARI CHANDRASHEKAR</h1>
+      <p>Problem Solver,Quick Learner</p> 
+    </div>
+    <br>
 
 <div id="div1">
     <nav class="navbar navbar-inverse">
@@ -30,7 +34,7 @@
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-              <li ><a href="index.html">Home</a></li>
+              <li ><a href="index.html">HOME</a></li>
               <li class="active"><a href="restapi.html">REST API</a></li>
               <li><a href="chatbot.html">CHAT BOT</a></li>
             </ul>
@@ -39,15 +43,15 @@
       </nav>
 </div>
 <div class="container">
-    <h3>REST API</h3>
-      <p>Hospital Inventory System using JS,Node.js,Express.js,Mongodb,post man
+    <h2 class="text-center">REST API</h2>
+      
         <p>This project aims at building an inventory tracking system for ventilators that
             allows authorized hospital users to input details of the available inventory and tag
             it as “occupied”, “available” and “in-maintenance”. The three status can also be
             updated using a secure API for real time usage metrics. The application should
             have the ability to also add any ventilator to a specific hospital and search
             ventilators which are available.</p>
-        <p>
+        
           <p>With this API we can</p>
         <ol>
             <li>Read Hospital and Ventilator Details</li>
@@ -57,13 +61,94 @@
             <li>Add Ventilators</li>
             <li>Delete Ventilator by Ventilator ID</li>
         </ol>
+        <p>Technologies and Tools I used</p>
+        <ol>
+            <li>For storing Hospital and Ventilator Details I used Mongodb</li>
+            <li>Brower only support GET and POST requests But I want to perform GET,POST,PATCH,DELETE so I used Postman</li>
+            <li>Node.js for JavaScript run time Environnment</li>
+            <li>Express.js</li>
+            <li>Mongoose used to interact with MongoDb</li>
+            <li>Nodemon is used instead of node to run code, so process will automatically restart when we make any code changes</li>
+        </ol>
+        
+
+
+    <div class="row">
+        <div class="col-sm-4">
+            <h2>MongoDb</h2>
+            <p> 1.Instead of using tables and rows as in the traditional relational databases,
+                 MongoDB makes use of collections and documents. Documents consist of key-value
+                  pairs which are the basic unit of data in MongoDB. </p>
+            <p>2.So It is a No SQL and document-oriented database</p>
+            <p>3.Data is stored in MongoDB in the form of JSON
+                Style.</p>
+                <p>4.JSON is simple structure and very easy to
+                    understand the content.</p>
+            <p>5.JSON is smaller, faster and lightweight.</p>
+            <p>6.To interact with MongoDB Mongoose is used</p>
+            <p>7.It is an Object Data Modeling(ODM) library for MongoDB</p>
+            <p>8.Using mongoose ,a user can define the schema for the document in a particular coillection
+
+            </p>
+        </div>
+        
+        <div class="col-sm-4">
+            <h2>Node js</h2>
+            <p>It is Run Time Environnment for Executing JavaScript code</p>
+            <p>Node is Ideal for I/O intensive applications</p>
+            <p>Node Applications are Asynchronous by default</p>
+            <img class="image" src="NodejsEventLoop.png">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <h2>Express js</h2>
+            <p>Express.js is a js web application server framework</p>
+            <p>Example:</p>
+            <img src="Expressjs.jpg" style="width: 100%;height: auto;">
+        </div>
+        
+        <div class="col-sm-6">
+            <h2>REST</h2>
+            <p>REST stands for REpresentational State Transfer. REST is web standards based architecture 
+                and uses HTTP Protocol. It is an architectural style as well as an approach for communications
+                 purposes that is often used in various web services development. A REST Server simply provides
+                  access to resources and REST client accesses and modifies the resources using HTTP protocol.</p>
+                  <img src="restPic.jpg" style="width: 100%;height: auto;">
+        </div>
+    </div>
 </div>
+<div class="chat">
+    <a href="chat.html"><img src="dialogflowlogo.png"></a>
+    <button><a href="chat.html">Chat with me</a></button>
+    
+  </div>
 
 
-
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Footer</p>
-</div>
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container text-center">
+            <div class="footer-logo">
+              <h3>Contact Me</h3>
+              <ul class="nav nav-pills nav-stacked">
+                <li>+91 9381409630</li>
+                <li>kongarichandrashekar8@gmail.com</li></ul>
+            </div>
+            <div class="social-icons">
+                <ul>
+                    
+                    <li><a class="linkedin" href="https://www.linkedin.com/in/chandrashekar-8"><i class="fa fa-linkedin icon-sm"></i></a></li>
+                    <li><a class="tumblr" href="https://github.com/kongarichandrashekar8"><i class="fa fa-github icon-sm"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+    <div class="text-center">
+      <p >&copy; 2021 by Kongari Chandrashekar</p>
+    </div>
+    </div>
+</footer>
 
 </body>
 </html>

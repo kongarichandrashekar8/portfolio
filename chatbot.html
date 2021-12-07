@@ -8,14 +8,17 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   
 </head>
 <body>
-   
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>KONGARI CHANDRASHEKAR</h1>
-  <p>Problem Solver,Quick Learner</p> 
-</div>
+    <br>
+    <div class="text-center" style="margin-bottom:0">
+      <h1>KONGARI CHANDRASHEKAR</h1>
+      <p>Problem Solver,Quick Learner</p> 
+    </div>
+    <br>
 
 <div id="div1">
     <nav class="navbar navbar-inverse">
@@ -39,11 +42,103 @@
       </nav>
 </div>
 
-
-
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Footer</p>
+<div class="container">
+    <h2 class="text-center">
+        Chat Bot
+    </h2>
+    <p>When the customer of a Telecom Company faces any internet issues by using this chatbot he/she can rise a tickets
+        and when ever he/she can check the status of the issue
+    </p>
+    <p>This chatbot provides a easier way to communicate with the Company 24/7</p>
+    <p>Steps:</p>
+    <ol>
+        <li>customer has to enter his registerted mobile number </li>
+        <li>In backend we check he/she is valid user or not</li>
+        <li>if he/she is valid user then ,chat bot showcase some of issues</li>
+        <li>customer has to select the issue in that list of issues</li>
+        <li>Trouble ticket will be generated after selection of issue and Trouble ticket will be stored in the Database </li>
+        <li>With that Trouble ticket number he/she can checks the status of the issue</li>
+    </ol>
+    <p>Technologies and Tools I used</p>
+    <ol>
+        <li>DialogFlow for creating bot</li>
+        <li>MongoDB for storing customer details</li>
+        <li>Node js for Run Time Environnment for Executing js code</li>
+        <li>Expressjs</li>
+        <li>ngrok acts as a tunnel between dialogflow and nodejs</li>
+    </ol>
+    <div class="row">
+        <div class="col-sm-4">
+            <h2>DialogFlow</h2>
+            <ol>
+                <li>
+                    Dialogflow is a natural language understanding platform used to design
+                     and integrate a conversational user interface into mobile apps, web applications,
+                      devices, bots, interactive voice response systems and related uses.
+                </li>
+                <li>An “agent” in Dialogflow is the the same as one chatbot.</li>
+                <li>An intent is an action a user wants to do or a question a user has. Example : Order a pizza</li>
+                <li>Entities are facts in a sentence, that refer to the who, what, when and where.Example : I want to order a <b>veggie</b> pizza.</li>
+                <li>a webhook can be used to fetch data from your server whenever a certain 
+                    intent having webhook enabled is invoked.</li>
+            </ol>
+            </div>
+        <div class="col-sm-4">
+            <h2>MongoDB</h2>
+            <p>
+                For storing customer data I used MongoDb ,because it is very efficient when there are fewer realations 
+                to manage,It is scalable.In this project user data has no inner relations 
+            </p>
+            <ol>
+                <li>
+                    Instead of using tables and rows as in the traditional relational databases,
+                MongoDB makes use of collections and documents. Documents consist of key-value
+                 pairs which are the basic unit of data in MongoDB.
+                </li>
+                <li>Data is stored in MongoDB in the form of JSON
+                    Style.</li>
+                    <li>To interact with MongoDB Mongoose is used</li>
+                    <li>It is an Object Data Modeling(ODM) library for MongoDB</li>
+                    <li>Using mongoose ,a user can define the schema for the document in a particular collection and we can manipulate </li>
+            </ol>
+            
+        </div>  
+        <div class="col-sm-4">
+            <h2>Node js</h2>
+            <p>I want to use JavaScript as a server side programming language,JavaScript runs on browers,to run on local not on brower I used Node js which is a run time Environnment for js</p>
+            <p>And also speed is important in this Application because customer don't wnat to wait for long time,Node js is very faster then php when it comes to chat applications</p>
+        </div>  
+            </div>
 </div>
+<div class="chat">
+    <a href="chat.html"><img src="dialogflowlogo.png"></a>
+    <button><a href="chat.html">Chat with me</a></button>
+    
+  </div>
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container text-center">
+            <div class="footer-logo">
+              <h3>Contact Me</h3>
+              <ul class="nav nav-pills nav-stacked">
+                <li>+91 9381409630</li>
+                <li>kongarichandrashekar8@gmail.com</li></ul>
+            </div>
+            <div class="social-icons">
+                <ul>
+                    
+                    <li><a class="linkedin" href="https://www.linkedin.com/in/chandrashekar-8"><i class="fa fa-linkedin icon-sm"></i></a></li>
+                    <li><a class="tumblr" href="https://github.com/kongarichandrashekar8"><i class="fa fa-github icon-sm"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+    <div class="text-center">
+      <p >&copy; 2021 by Kongari Chandrashekar</p>
+    </div>
+    </div>
+</footer>
 
 </body>
 </html>
